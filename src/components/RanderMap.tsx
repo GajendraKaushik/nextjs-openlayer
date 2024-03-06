@@ -12,7 +12,7 @@ import { Draw, Select } from "ol/interaction";
 import { Point, LineString, Polygon } from "ol/geom";
 import { getArea, getLength } from "ol/sphere";
 import ReactTooltip from "react-tooltip";
-import { Style, Fill } from 'ol/style';
+import { Style, Fill, Stroke, Circle } from 'ol/style';
 
 const RenderMap: React.FC = () => {
   const [interactionType, setInteractionType] = useState<string>("");
@@ -41,9 +41,31 @@ const RenderMap: React.FC = () => {
         zoom: 3,
       }),
     });
+    
+    const polygonStyleFunction = () => {
+      return new Style({
+          fill: new Fill({
+              color: 'rgba(23, 78, 15, 0.5)' // Define the fill color and opacity
+          }),
+          stroke: new Stroke({
+            color: 'rgba(23, 78, 15, 1)',
+            width: 3,
+          }),
+        
+          image: new Circle({
+            fill: new Fill({
+              color:'rgba(23, 78, 15, 0.8)',
+      
+            }),
+            radius: 8,
+             
+          })
+      });
+  };
 
     vectorLayerRef.current = new VectorLayer({
       source: new VectorSource<Feature>(),
+      style: polygonStyleFunction(),
     });
 
     mapRef.current.addLayer(vectorLayerRef.current);
@@ -156,8 +178,8 @@ const RenderMap: React.FC = () => {
   return (
     <>
     <div className="flex justify-between bg-white h-24 w-full p-8 ">
-     <h1 className="text-3xl font-bold">Ottermap</h1>
-    <div className="flex justify-between gap-6 font-bold pr-10 sm: mt-1 gap-3 pr-5 text-xl">
+     <h1 className="text-3xl text-green-800 font-bold">Ottermap</h1>
+    <div className="flex justify-between text-green-800 gap-6 font-bold pr-10 sm: mt-1 gap-3 pr-5 text-xl">
       <div>
          <label className="text-2xl" htmlFor="draw-type">Draw : </label>
         <select

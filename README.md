@@ -3,7 +3,7 @@
 
 The objective of this project is to learn the basic concept and features of the OpenLayer a JavaScript library to interact with the Map.
 
-In this project, we have learned how can a user create a point, and draw a line and polygon in the map. 
+In this project, we have learned how can a user create a point, and draw a line and polygon on the map. 
 
 
 ## Working Functionality 
@@ -30,7 +30,7 @@ Here by default, the selector is set to None meaning we will not do anything, dr
 
 The second option is a clear button to clear all the drawings present on the map. 
 
-## Tech Steck Used 
+## Tech Stack Used 
 while creating this application I used the tech Stack:
   
     + Nextjs

@@ -15,7 +15,7 @@ import { Style, Fill, Stroke, Circle } from "ol/style";
 
 // Component to render a map using open layer
 const RenderMap: React.FC = () => {
-  
+
   // declared state to manage the component data
   const [interactionType, setInteractionType] = useState<string>("");
   const mapRef = useRef<Map | null>(null);
@@ -171,7 +171,7 @@ const RenderMap: React.FC = () => {
   const handleClearDrawing = () => {
     if (drawInteractionRef.current) {
       mapRef.current?.removeInteraction(drawInteractionRef.current);
-      vectorLayerRef.current!.getSource().clear();
+      vectorLayerRef.current!.getSource()?.clear();
     }
   };
 

@@ -1,42 +1,46 @@
 
 # MapLayer
 
-The opjective of this project is to learn the basic concept and features of the OpenLayer a javaScript library to intract with the Map.
+The objective of this project is to learn the basic concept and features of the OpenLayer a JavaScript library to interact with the Map.
 
-In this project we have learn how can a user creat a point, draw a line and polygon in the map. 
+In this project, we have learned how can a user create a point, and draw a line and polygon in the map. 
 
 
-## Working Functinality 
-In this web app a user perform below Operations:
+## Working Functionality 
+In this web app, a user performs below Operations:
      
      -> User can draw a point on any location.
-     -> User can draw a line between multiple points and can also  get the total distance of the line.
-     -> User can draw polygon and it will be filled with color and can also get the area covered by polygon. 
-     -> User can also clear all the drawing from the map using a clear button provided in the top left corner.
+     -> The user can draw a line between multiple points and can also  get the total distance of the line.
+     -> User can draw a polygon and it will be filled with color and can also get the area covered by polygon. 
+     -> The user can also clear all the drawings from the map using a clear button provided in the top left corner.
 
 
 
 ## How To Use 
 
-When the application loads on the top left corner ther are two options first is selector in which user will get 4 option 
+When the application loads on the top left corner there are two options first is a selector in which the user will get 4 option 
 like:
       
-      None
-      Point
-      Line
-      Polygon
+     + None
+     + Point
+     + Line
+     + Polygon
 
-Here by default selector is set on None meanse we will not do any thing, draw a point we need to select point and so. 
+Here by default, the selector is set to None meaning we will not do anything, draw a point we need to select a point and so on. 
 
-The second option is a clear button to clear all the drawing present in the map. 
+The second option is a clear button to clear all the drawings present on the map. 
 
 ## Tech Steck Used 
-while creating this application i have used below tech Stack:
+while creating this application I used the tech Stack:
   
-    Nextjs
-    Typescript
-    Tailwind CSS 
-    OpenLayer
-    OpenLayers interaction tools
+    + Nextjs
+    + Typescript
+    + Tailwind CSS 
+    + OpenLayers
+    + OpenLayers interaction tools
 
+## Video Example of the application
+
+
+https://github.com/GajendraKaushik/nextjs-openlayer/assets/119392005/b5332ae4-d521-4138-b603-d572a88d2fca
 

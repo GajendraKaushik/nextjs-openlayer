@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# MapLayer
 
-First, run the development server:
+The opjective of this project is to learn the basic concept and features of the OpenLayer a javaScript library to intract with the Map.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In this project we have learn how can a user creat a point, draw a line and polygon in the map. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Working Functinality 
+In this web app a user perform below Operations:
+     
+     -> User can draw a point on any location.
+     -> User can draw a line between multiple points and can also  get the total distance of the line.
+     -> User can draw polygon and it will be filled with color and can also get the area covered by polygon. 
+     -> User can also clear all the drawing from the map using a clear button provided in the top left corner.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## How To Use 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+When the application loads on the top left corner ther are two options first is selector in which user will get 4 option 
+like:
+      
+      None
+      Point
+      Line
+      Polygon
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Here by default selector is set on None meanse we will not do any thing, draw a point we need to select point and so. 
 
-## Deploy on Vercel
+The second option is a clear button to clear all the drawing present in the map. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Steck Used 
+while creating this application i have used below tech Stack:
+  
+    Nextjs
+    Typescript
+    Tailwind CSS 
+    OpenLayer
+    OpenLayers interaction tools
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+

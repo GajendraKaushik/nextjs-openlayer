@@ -94,9 +94,11 @@ const RenderMap: React.FC = () => {
 
   // function to handle the drawing intraction in the map like Draw, poin, Polygon
   const handleInteraction = (type: string) => {
-    if (!type) return;
+    if (!type || !vectorLayerRef.current) return; 
+    const source = vectorLayerRef.current.getSource();
+    if (!source) return; 
     const draw = new Draw({
-      source: vectorLayerRef.current!.getSource(),
+      source: source,
       type: type as any,
     });
 
